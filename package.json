@@ -1,0 +1,19 @@
+{
+  "main": "index.js",
+  "name": "tree-store",
+  "version": "0.0.0",
+  "description": "Module for working with trees represented as arrays.",
+  "author": "Demid Vasilyev <vasilyev.demid.e@gmail.com>",
+  "scripts": {
+    "start": "npm run build && npm run launch",
+    "start:dev": "concurrently \"npm run build:dev\" \"npm run launch:dev\"",
+    "build": "npx tsc",
+    "launch": "node dist/index.js",
+    "launch:dev": "nodemon dist/index.js",
+    "build:dev": "npx tsc --watch --preserveWatchOutput"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "typescript": "^4.9.3"
+  }
+}
